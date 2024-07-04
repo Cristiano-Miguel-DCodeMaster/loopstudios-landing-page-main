@@ -65,6 +65,7 @@ section {
 		align-items: flex-start;
 		justify-content: center;
 		transition: all 1s;
+		z-index: 1;
 		display: none;
 	}
 	@keyframes move {
@@ -206,7 +207,7 @@ section {
 		color: var(--White);
 		width: 50%;
 		text-align: left;
-		padding-top:25%;
+		padding-top:30%;
 		padding-bottom:5%;
 		margin-top: 0%;
 	}
@@ -218,11 +219,10 @@ section {
 	.sec3 .holder .images .six,
 	.sec3 .holder .images .seven,
 	.sec3 .holder .images .eight{
-		background-image: url(/images/mobile/image-interactive.jpg);
-		background-size: cover;
+		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		height: 30vh;
+		height: 20vh;
 	}
 	.sec3 .holder .images .one{
 		background-image: url(/images/mobile/image-deep-earth.jpg);
