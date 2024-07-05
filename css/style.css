@@ -1,8 +1,16 @@
 * {
 	margin: 0;
 }
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+	background-color: black;
+	width: 10px;
+}
+::-webkit-scrollbar-thumb{
+	background-color:#f766e3;
+	border-radius: 12px;
 }
 :root {
 	--White: hsl(0, 0%, 100%);
@@ -38,8 +46,13 @@ section {
 @media only screen and (min-width: 320px) {
 	header {
 		padding-top: 6%;
-        backdrop-filter: blur(5px);
-        background-color: rgba(0, 0, 0, 0.171);
+		backdrop-filter: blur(5px);
+		background-color: rgba(
+			0,
+			0,
+			0,
+			0.171
+		);
 		z-index: 1;
 	}
 	header nav {
@@ -167,38 +180,52 @@ section {
 		width: 90%;
 		padding-top: 5%;
 	}
-	.sec3{
+	.sec3 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: fit-content;
+		padding-top: 15%;
 	}
-	.sec3 .holder{
+	.sec3 .holder {
 		text-align: center;
 		width: 90%;
+		padding-bottom: 15%;
 	}
-	.sec3 .holder .sec3-title h3{
+	.sec3 .holder .sec3-title h3 {
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: 250;
 		font-family: "Josefin";
-		padding-top:8%;
-		padding-bottom:8%;
+		padding-top: 8%;
+		padding-bottom: 8%;
 	}
-	.sec3 .sec3-title a{
+	.sec3 .sec3-title a {
 		display: none;
 	}
-	.sec3 .holder .images{
+	.sec3 .holder .See{
+		text-decoration: none;
+		padding: 10px;
+		border: 1.2px solid var(--DarkGray);
+		color: var(--Black);
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 400;
+		font-family: "Josefin";
+		width: 10%;
+	}
+	.sec3 .holder .images {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		align-items: center;
 		justify-content: center;
+		padding-bottom: 15%;
 	}
-	.sec3 .holder .images div{
+	.sec3 .holder .images div {
 		width: 100%;
 	}
-	.sec3 .holder .images div p{
+	.sec3 .holder .images div p {
 		position: absolute;
 		text-transform: uppercase;
 		font-size: 30px;
@@ -207,8 +234,8 @@ section {
 		color: var(--White);
 		width: 50%;
 		text-align: left;
-		padding-top:30%;
-		padding-bottom:5%;
+		padding-top: 30%;
+		padding-bottom: 5%;
 		margin-top: 0%;
 	}
 	.sec3 .holder .images .one,
@@ -218,35 +245,76 @@ section {
 	.sec3 .holder .images .five,
 	.sec3 .holder .images .six,
 	.sec3 .holder .images .seven,
-	.sec3 .holder .images .eight{
-		background-size: contain;
+	.sec3 .holder .images .eight {
+		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		height: 20vh;
 	}
-	.sec3 .holder .images .one{
+	.sec3 .holder .images .one {
 		background-image: url(/images/mobile/image-deep-earth.jpg);
 	}
-	.sec3 .holder .images .two{
+	.sec3 .holder .images .two {
 		background-image: url(/images/mobile/image-night-arcade.jpg);
 	}
-	.sec3 .holder .images .three{
+	.sec3 .holder .images .three {
 		background-image: url(/images/mobile/image-soccer-team.jpg);
 	}
-	.sec3 .holder .images .four{
+	.sec3 .holder .images .four {
 		background-image: url(/images/mobile/image-grid.jpg);
 	}
-	.sec3 .holder .images .five{
+	.sec3 .holder .images .five {
 		background-image: url(/images/mobile/image-from-above.jpg);
 	}
-	.sec3 .holder .images .six{
+	.sec3 .holder .images .six {
 		background-image: url(/images/mobile/image-pocket-borealis.jpg);
 	}
-	.sec3 .holder .images .seven{
+	.sec3 .holder .images .seven {
 		background-image: url(/images/mobile/image-curiosity.jpg);
 	}
-	.sec3 .holder .images .eight{
+	.sec3 .holder .images .eight {
 		background-image: url(/images/mobile/image-fisheye.jpg);
+	}
+	footer{
+		background-color: var(--Black);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Alata';
+		gap: 20px;
+		padding-top: 15%;
+		padding-bottom: 10%;
+	}
+	footer .left img{
+		padding-bottom: 10%;
+	}
+	footer .footer-menu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	footer .footer-menu a{
+		text-decoration: none;
+		color: var(--White);
+	}
+	footer .right{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	footer .right .medias{
+		display: flex;
+		gap: 10px;
+	}
+	footer .right .medias img{
+		height: fit-content;
+	}
+	footer .right p{
+		color: var(--DarkGray);
+		font-size: 14px;
 	}
 }
 @media only screen and (min-width: 992px) {
@@ -255,10 +323,12 @@ section {
 	}
 	header {
 		padding-top: 1.5%;
+		width: 100%;
 	}
 	header nav {
 		display: flex;
 		gap: 30px;
+		padding-top: 1%;
 	}
 	.menu {
 		display: none;
@@ -267,7 +337,7 @@ section {
 		background-image: url(/images/desktop/image-hero.jpg);
 	}
 	.sec1 .border {
-		margin-left: 15%;
+		margin-left: -31%;
 		width: 35%;
 		padding: 20px;
 	}
@@ -301,5 +371,99 @@ section {
 	.sec2 .sec2div .right p {
 		font-size: 12px;
 		width: 83%;
+	}
+	.sec3{
+		padding-top: 6%;
+		padding-bottom: 10%;
+	}
+	.sec3 .holder {
+		width: 70%;
+	}
+	.sec3 .holder .See{
+		display: none;
+	}
+	.sec3 .holder .sec3-title h3 {
+		padding-bottom: 4%;
+		padding-top: 4%;
+	}
+	.sec3 .sec3-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.sec3 .sec3-title a {
+		display: block;
+		text-decoration: none;
+		padding: 10px;
+		border: 1px solid var(--DarkGray);
+		color: var(--Black);
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 350;
+		font-family: "Josefin";
+		width: 10%;
+	}
+	.sec3 .sec3-title a:hover {
+		background-color: var(--Black);
+		color: var(--White);
+		transition: all 0.5s ease-in;
+	}
+	.sec3 .holder .images {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.sec3 .holder .images div:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+		transition: all 1s ease;
+	}
+	.sec3 .holder .images div p {
+		position: relative;
+		font-size: 30px;
+		text-align: left;
+		padding-top: 30%;
+		padding-bottom: 5%;
+		margin-top: 100%;
+	}
+	.sec3 .holder .images .one,
+	.sec3 .holder .images .two,
+	.sec3 .holder .images .three,
+	.sec3 .holder .images .four,
+	.sec3 .holder .images .five,
+	.sec3 .holder .images .six,
+	.sec3 .holder .images .seven,
+	.sec3 .holder .images .eight {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 60vh;
+	}
+	.sec3 .holder .images .one {
+		background-image: url(/images/desktop/image-deep-earth.jpg);
+	}
+	.sec3 .holder .images .two {
+		background-image: url(/images/desktop/image-night-arcade.jpg);
+	}
+	.sec3 .holder .images .three {
+		background-image: url(/images/desktop/image-soccer-team.jpg);
+	}
+	.sec3 .holder .images .four {
+		background-image: url(/images/desktop/image-grid.jpg);
+	}
+	.sec3 .holder .images .five {
+		background-image: url(/images/desktop/image-from-above.jpg);
+	}
+	.sec3 .holder .images .six {
+		background-image: url(/images/desktop/image-pocket-borealis.jpg);
+	}
+	.sec3 .holder .images .seven {
+		background-image: url(/images/desktop/image-curiosity.jpg);
+	}
+	.sec3 .holder .images .eight {
+		background-image: url(/images/desktop/image-fisheye.jpg);
+	}
+	footer {
+		border: 2px solid red;
 	}
 }

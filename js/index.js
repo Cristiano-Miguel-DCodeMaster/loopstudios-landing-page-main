@@ -12,10 +12,12 @@ close.addEventListener('click', () => {
         menumobile.style.display = "none";
     }, 900);
 })
-const a = document.querySelector('.menu-mobile a');
-a.addEventListener('click', () => {
-    menumobile.style.animation = "moveout 6.1s ease 1";
-    setTimeout(() => {
-        menumobile.style.display = "none";
-    }, 6000);
-})
+const a = document.querySelectorAll('.menu-mobile a');
+a.forEach(a => {
+    a.addEventListener('click', () => {
+        menumobile.style.animation = "moveout 6.1s ease 1";
+        setTimeout(() => {
+            menumobile.style.display = "none";
+        }, 6000);
+    })
+});
