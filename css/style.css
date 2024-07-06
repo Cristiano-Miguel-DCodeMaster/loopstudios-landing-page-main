@@ -43,6 +43,281 @@ section {
 	width: 100%;
 	height: 100vh;
 }
+@media only screen and (max-width: 320px) {
+	header {
+		padding-top: 6%;
+		backdrop-filter: blur(5px);
+		background-color: rgba(
+			0,
+			0,
+			0,
+			0.171
+		);
+		z-index: 1;
+	}
+	header nav {
+		display: none;
+	}
+	header .logo {
+		width: 80%;
+		height: fit-content;
+		margin-left: -4%;
+	}
+	header .menu {
+		height: fit-content;
+		padding-top: 2%;
+	}
+	.menu-mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		background-color: var(--Black);
+		align-items: flex-start;
+		justify-content: center;
+		transition: all 1s;
+		z-index: 1;
+		display: none;
+	}
+	@keyframes move {
+		from {
+			transform: translateX(100%);
+		}
+		to {
+			transform: translateX(0);
+		}
+	}
+	@keyframes moveout {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(100%);
+		}
+	}
+	.menu-mobile a {
+		margin-left: 8%;
+		text-decoration: none;
+		color: var(--White);
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: "josefin";
+		font-weight: 200;
+	}
+	.menu-mobile .logoX {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 5%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.menu-mobile .logoX .logo {
+		width: 50%;
+		height: fit-content;
+		margin-left: -6%;
+	}
+	.menu-mobile .logoX .close {
+		height: fit-content;
+		padding-top: 1%;
+		margin-right: -6%;
+	}
+	.sec1 {
+		background-image: url(/images/mobile/image-hero.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.sec1 .border {
+		border: 1.7px solid var(--White);
+		width: 70%;
+		padding: 10px;
+	}
+	.sec1 .border h1 {
+		text-transform: uppercase;
+		color: white;
+		font-size: 22px;
+		font-weight: 200;
+		font-family: "Josefin";
+	}
+	.sec2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 22%;
+	}
+	.sec2 .sec2div {
+		width: 90%;
+	}
+	.sec2 .left {
+		background-image: url(/images/mobile/image-interactive.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 50vh;
+	}
+	.sec2 .right {
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.sec2 .sec2div .right h2 {
+		text-transform: uppercase;
+		font-size: 23px;
+		font-weight: 250;
+		font-family: "Josefin";
+	}
+	.sec2 .sec2div .right p {
+		color: var(--DarkGray);
+		font-family: "Alata";
+		font-size: 12px;
+		font-weight: 200;
+		width: 90%;
+		padding-top: 5%;
+	}
+	.sec3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: fit-content;
+		padding-top: 15%;
+	}
+	.sec3 .holder {
+		text-align: center;
+		width: 90%;
+		padding-bottom: 15%;
+	}
+	.sec3 .holder .sec3-title h3 {
+		text-transform: uppercase;
+		font-size: 23px;
+		font-weight: 250;
+		font-family: "Josefin";
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+	.sec3 .sec3-title a {
+		display: none;
+	}
+	.sec3 .holder .See{
+		text-decoration: none;
+		padding: 10px;
+		border: 1.2px solid var(--DarkGray);
+		color: var(--Black);
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 400;
+		font-family: "Josefin";
+		width: 10%;
+	}
+	.sec3 .holder .images {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 15%;
+	}
+	.sec3 .holder .images div {
+		width: 100%;
+	}
+	.sec3 .holder .images div p {
+		position: absolute;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 250;
+		font-family: "Josefin";
+		color: var(--White);
+		width: 40%;
+		text-align: left;
+		padding-top: 30%;
+		padding-bottom: 5%;
+		margin-top: -16%;
+	}
+	.sec3 .holder .images .one,
+	.sec3 .holder .images .two,
+	.sec3 .holder .images .three,
+	.sec3 .holder .images .four,
+	.sec3 .holder .images .five,
+	.sec3 .holder .images .six,
+	.sec3 .holder .images .seven,
+	.sec3 .holder .images .eight {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 20vh;
+	}
+	.sec3 .holder .images .one {
+		background-image: url(/images/mobile/image-deep-earth.jpg);
+	}
+	.sec3 .holder .images .two {
+		background-image: url(/images/mobile/image-night-arcade.jpg);
+	}
+	.sec3 .holder .images .three {
+		background-image: url(/images/mobile/image-soccer-team.jpg);
+	}
+	.sec3 .holder .images .four {
+		background-image: url(/images/mobile/image-grid.jpg);
+	}
+	.sec3 .holder .images .five {
+		background-image: url(/images/mobile/image-from-above.jpg);
+	}
+	.sec3 .holder .images .six {
+		background-image: url(/images/mobile/image-pocket-borealis.jpg);
+	}
+	.sec3 .holder .images .seven {
+		background-image: url(/images/mobile/image-curiosity.jpg);
+	}
+	.sec3 .holder .images .eight {
+		background-image: url(/images/mobile/image-fisheye.jpg);
+	}
+	footer{
+		background-color: var(--Black);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Alata';
+		gap: 20px;
+		padding-top: 15%;
+		padding-bottom: 10%;
+	}
+	footer .left img{
+		padding-bottom: 10%;
+	}
+	footer .footer-menu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	footer .footer-menu a{
+		text-decoration: none;
+		color: var(--White);
+	}
+	footer .right{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	footer .right .medias{
+		display: flex;
+		gap: 10px;
+	}
+	footer .right .medias img{
+		height: fit-content;
+	}
+	footer .right p{
+		color: var(--DarkGray);
+		font-size: 14px;
+		text-align: center;
+	}
+}
 @media only screen and (min-width: 320px) {
 	header {
 		padding-top: 6%;
@@ -150,6 +425,11 @@ section {
 		align-items: center;
 		justify-content: center;
 		padding-top: 14%;
+		opacity: 0;
+		transition: all 2s;
+	}
+	.sec2.show{
+		opacity: 1;
 	}
 	.sec2 .sec2div {
 		width: 90%;
@@ -186,6 +466,11 @@ section {
 		justify-content: center;
 		height: fit-content;
 		padding-top: 15%;
+		transform: translateX(-100%);
+		transition: all 2s;
+	}
+	.sec3.show{
+		transform: translateX(0);
 	}
 	.sec3 .holder {
 		text-align: center;
@@ -228,15 +513,15 @@ section {
 	.sec3 .holder .images div p {
 		position: absolute;
 		text-transform: uppercase;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 250;
 		font-family: "Josefin";
 		color: var(--White);
-		width: 50%;
+		width: 40%;
 		text-align: left;
 		padding-top: 30%;
 		padding-bottom: 5%;
-		margin-top: 0%;
+		margin-top: -15%;
 	}
 	.sec3 .holder .images .one,
 	.sec3 .holder .images .two,
@@ -317,6 +602,75 @@ section {
 		font-size: 14px;
 	}
 }
+@media only screen and (min-width:768px){
+	header .logo {
+		width: 150%;
+		margin-left: -20%;
+	}
+	header .menu {
+		padding-top: 1.5%;
+		width: 5%;
+	}
+	.menu-mobile a {
+		font-size: 40px;
+	}
+	.menu-mobile .logoX .close {
+		width: 6%;
+		margin-right: -12px;
+	}
+	.sec1 .border h1 {
+		font-size: 80px;
+	}
+	.sec2 {
+		padding-top: 15%;
+	}
+	.sec2 .sec2div {
+		width: 80%;
+	}
+	.sec2 .sec2div .right h2 {
+		font-size: 60px;
+	}
+	.sec2 .sec2div .right p {
+		font-size: 24px;
+	}
+	.sec3 {
+		padding-top: 15%;
+	}
+	.sec3 .holder {
+		width: 85%;
+		padding-bottom: 15%;
+	}
+	.sec3 .holder .sec3-title h3 {
+		font-size: 50px;
+	}
+	.sec3 .holder .See{
+		padding: 25px;
+	}
+	.sec3 .holder .images div p {
+		font-size: 45px;
+	}
+	footer .left img{
+		width: 200%;
+		height: fit-content;
+		margin-left: -50%;
+		padding-bottom: 15%;
+	}
+	footer .footer-menu a{
+		font-size: 40px;
+	}
+	footer .right{
+		padding-top: 10%;
+	}
+	footer .right .medias{
+		gap: 40px;
+	}
+	footer .right .medias img{
+		width: 60px;
+	}
+	footer .right p{
+		font-size: 30px;
+	}
+}
 @media only screen and (min-width: 992px) {
 	body {
 		font-family: "Josefin";
@@ -324,6 +678,10 @@ section {
 	header {
 		padding-top: 1.5%;
 		width: 100%;
+	}
+	header .logo {
+		width: 100%;
+		margin-left: -10%;
 	}
 	header nav {
 		display: flex;
@@ -337,8 +695,8 @@ section {
 		background-image: url(/images/desktop/image-hero.jpg);
 	}
 	.sec1 .border {
-		margin-left: -31%;
-		width: 35%;
+		margin-left: -38%;
+		width: 38%;
 		padding: 20px;
 	}
 	.sec1 .border h1 {
@@ -369,15 +727,19 @@ section {
 		font-size: 40px;
 	}
 	.sec2 .sec2div .right p {
-		font-size: 12px;
-		width: 83%;
+		font-size: 11.5px;
+		width: 100%;
 	}
 	.sec3{
-		padding-top: 6%;
-		padding-bottom: 10%;
+		padding-top: 12%;
+		padding-bottom: 0;
 	}
 	.sec3 .holder {
 		width: 70%;
+		padding-bottom: 0;
+	}
+	.sec3 .holder .sec3-title h3 {
+		font-size: 30px;
 	}
 	.sec3 .holder .See{
 		display: none;
@@ -401,7 +763,7 @@ section {
 		font-size: 20px;
 		font-weight: 350;
 		font-family: "Josefin";
-		width: 10%;
+		width: 15%;
 	}
 	.sec3 .sec3-title a:hover {
 		background-color: var(--Black);
@@ -424,7 +786,20 @@ section {
 		text-align: left;
 		padding-top: 30%;
 		padding-bottom: 5%;
-		margin-top: 100%;
+		padding-left: 8%;
+		margin-top: 140%;
+		color: var(--White);
+		opacity: .90;
+		background-color: rgba(0, 0, 0, 0.231);
+	}
+	.sec3 .holder .images div .soccer{
+		width: 95%;
+	}
+	.sec3 .holder .images div .from{
+		width: 95%;
+	}
+	.sec3 .holder .images div .make{
+		width: 95%;
 	}
 	.sec3 .holder .images .one,
 	.sec3 .holder .images .two,
@@ -464,6 +839,161 @@ section {
 		background-image: url(/images/desktop/image-fisheye.jpg);
 	}
 	footer {
-		border: 2px solid red;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	footer .footer-menu{
+		flex-direction: row;
+	}
+	footer .left img{
+		width: 80%;
+		height: fit-content;
+		margin-left: 0;
+		padding-bottom: 15%;
+	}
+	footer .footer-menu a{
+		font-size: 16px;
+	}
+	footer .right p{
+		font-size: 16px;
+	}
+	footer .right{
+		align-items:flex-end;
+		gap: 10px;
+		margin-top: -8%;
+	}
+	footer .right .medias{
+		padding-bottom: 8%;
+	}
+	footer .right .medias img{
+		width: 30px;
+	}
+}
+@media only screen and (min-width: 1272px) {
+	header {
+		padding-top: 2%;
+	}
+	header .logo {
+		width: 100%;
+		margin-left: -10%;
+	}
+	header nav a{
+		font-size: 18px;
+	}
+	.sec1 .border {
+		width: 32%;
+	}
+	.sec2 .sec2div .right p {
+		font-size: 12px;
+		width: 82%;
+	}
+	.sec3{
+		padding-top: 8%;
+	}
+	.sec3 .holder .images div p {
+		margin-top: 110%;
+	}
+	.sec3 .holder .images div .night{
+		width: 90%;
+	}
+	.sec3 .holder .images div .soccer{
+		width: 90%;
+	}
+	.sec3 .holder .images div .from{
+		width: 90%;
+	}
+	.sec3 .holder .images div .pocket{
+		width: 90%;
+	}
+	.sec3 .holder .images div .thecuriosity{
+		width: 90%;
+	}
+	.sec3 .holder .images div .make{
+		width: 90%;
+	}
+	footer {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	footer .footer-menu{
+		flex-direction: row;
+	}
+	footer .left img{
+		width: 80%;
+		height: fit-content;
+		margin-left: 0;
+		padding-bottom: 15%;
+	}
+	footer .footer-menu a{
+		font-size: 16px;
+	}
+	footer .right p{
+		font-size: 16px;
+	}
+	footer .right{
+		align-items:flex-end;
+		gap: 10px;
+		margin-top: -8%;
+	}
+	footer .right .medias{
+		padding-bottom: 8%;
+	}
+	footer .right .medias img{
+		width: 30px;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	header {
+		padding-top: 3%;
+	}
+	header .logo {
+		width: 130%;
+	}
+	header nav a{
+		font-size: 28px;
+	}
+	.sec1 .border {
+		width: 45%;
+		margin-left: -25%;
+	}
+	.sec1 .border h1{
+		font-size: 80px;
+	}
+	.sec2 .sec2div .right{
+		width: 40%;
+		right: 1%;
+	}
+	.sec2 .sec2div .right h2{
+		font-size: 52px;
+	}
+	.sec2 .sec2div .right p {
+		font-size: 20px;
+		width: 100%;
+	}
+	.sec3 .holder .images div p {
+		margin-top: 170%;
+		font-size: 38px;
+	}
+	footer .footer-menu a{
+		font-size: 25px;
+	}
+	footer .right p{
+		font-size: 25px;
+	}
+	footer .right .medias img{
+		width: 40px;
+	}
+}
+@media only screen and (min-width:1600px) and (min-height:780px){
+	.sec1 .border {
+		width: 40%;
+		margin-left: -30%;
+	}
+	.sec2 .sec2div .right{
+		width: 36%;
+		right: 12%;
+	}
+	.sec3 .holder .images div p {
+		margin-top: 110%;
 	}
 }
