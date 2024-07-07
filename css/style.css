@@ -20,11 +20,11 @@ html {
 }
 @font-face {
 	font-family: "Alata";
-	src: url(/fonts/Alata-Regular.ttf);
+	src: url("/fonts/Alata-Regular.ttf");
 }
 @font-face {
 	font-family: "Josefin";
-	src: url(/fonts/JosefinSans[wght].ttf);
+	src: url("/fonts/JosefinSans[wght].ttf");
 }
 header {
 	background-color: transparent;
