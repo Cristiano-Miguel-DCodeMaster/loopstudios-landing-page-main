@@ -20,11 +20,11 @@ html {
 }
 @font-face {
 	font-family: "Alata";
-	src: url("/fonts/Alata-Regular.ttf");
+	src: url("../fonts/Alata-Regular.ttf");
 }
 @font-face {
 	font-family: "Josefin";
-	src: url("/fonts/JosefinSans[wght].ttf");
+	src: url("../fonts/JosefinSans[wght].ttf");
 }
 header {
 	background-color: transparent;
@@ -125,7 +125,7 @@ section {
 		margin-right: -6%;
 	}
 	.sec1 {
-		background-image: url(/images/mobile/image-hero.jpg);
+		background-image: url(../images/mobile/image-hero.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -155,7 +155,7 @@ section {
 		width: 90%;
 	}
 	.sec2 .left {
-		background-image: url(/images/mobile/image-interactive.jpg);
+		background-image: url(../images/mobile/image-interactive.jpg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		height: 50vh;
@@ -252,28 +252,28 @@ section {
 		height: 20vh;
 	}
 	.sec3 .holder .images .one {
-		background-image: url(/images/mobile/image-deep-earth.jpg);
+		background-image: url(../images/mobile/image-deep-earth.jpg);
 	}
 	.sec3 .holder .images .two {
-		background-image: url(/images/mobile/image-night-arcade.jpg);
+		background-image: url(../images/mobile/image-night-arcade.jpg);
 	}
 	.sec3 .holder .images .three {
-		background-image: url(/images/mobile/image-soccer-team.jpg);
+		background-image: url(../images/mobile/image-soccer-team.jpg);
 	}
 	.sec3 .holder .images .four {
-		background-image: url(/images/mobile/image-grid.jpg);
+		background-image: url(../images/mobile/image-grid.jpg);
 	}
 	.sec3 .holder .images .five {
-		background-image: url(/images/mobile/image-from-above.jpg);
+		background-image: url(../images/mobile/image-from-above.jpg);
 	}
 	.sec3 .holder .images .six {
-		background-image: url(/images/mobile/image-pocket-borealis.jpg);
+		background-image: url(../images/mobile/image-pocket-borealis.jpg);
 	}
 	.sec3 .holder .images .seven {
-		background-image: url(/images/mobile/image-curiosity.jpg);
+		background-image: url(../images/mobile/image-curiosity.jpg);
 	}
 	.sec3 .holder .images .eight {
-		background-image: url(/images/mobile/image-fisheye.jpg);
+		background-image: url(../images/mobile/image-fisheye.jpg);
 	}
 	footer{
 		background-color: var(--Black);
@@ -400,7 +400,7 @@ section {
 		margin-right: -6%;
 	}
 	.sec1 {
-		background-image: url(/images/mobile/image-hero.jpg);
+		background-image: url(../images/mobile/image-hero.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -435,7 +435,7 @@ section {
 		width: 90%;
 	}
 	.sec2 .left {
-		background-image: url(/images/mobile/image-interactive.jpg);
+		background-image: url(../images/mobile/image-interactive.jpg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		height: 50vh;
@@ -537,28 +537,28 @@ section {
 		height: 20vh;
 	}
 	.sec3 .holder .images .one {
-		background-image: url(/images/mobile/image-deep-earth.jpg);
+		background-image: url(../images/mobile/image-deep-earth.jpg);
 	}
 	.sec3 .holder .images .two {
-		background-image: url(/images/mobile/image-night-arcade.jpg);
+		background-image: url(../images/mobile/image-night-arcade.jpg);
 	}
 	.sec3 .holder .images .three {
-		background-image: url(/images/mobile/image-soccer-team.jpg);
+		background-image: url(../images/mobile/image-soccer-team.jpg);
 	}
 	.sec3 .holder .images .four {
-		background-image: url(/images/mobile/image-grid.jpg);
+		background-image: url(../images/mobile/image-grid.jpg);
 	}
 	.sec3 .holder .images .five {
-		background-image: url(/images/mobile/image-from-above.jpg);
+		background-image: url(../images/mobile/image-from-above.jpg);
 	}
 	.sec3 .holder .images .six {
-		background-image: url(/images/mobile/image-pocket-borealis.jpg);
+		background-image: url(../images/mobile/image-pocket-borealis.jpg);
 	}
 	.sec3 .holder .images .seven {
-		background-image: url(/images/mobile/image-curiosity.jpg);
+		background-image: url(../images/mobile/image-curiosity.jpg);
 	}
 	.sec3 .holder .images .eight {
-		background-image: url(/images/mobile/image-fisheye.jpg);
+		background-image: url(../images/mobile/image-fisheye.jpg);
 	}
 	footer{
 		background-color: var(--Black);
@@ -692,7 +692,7 @@ section {
 		display: none;
 	}
 	.sec1 {
-		background-image: url(/images/desktop/image-hero.jpg);
+		background-image: url(../images/desktop/image-hero.jpg);
 	}
 	.sec1 .border {
 		margin-left: -38%;
@@ -710,7 +710,7 @@ section {
 		width: 70%;
 	}
 	.sec2 .left {
-		background-image: url(/images/desktop/image-interactive.jpg);
+		background-image: url(../images/desktop/image-interactive.jpg);
 		height: 65vh;
 	}
 	.sec2 .right {
@@ -815,28 +815,28 @@ section {
 		height: 60vh;
 	}
 	.sec3 .holder .images .one {
-		background-image: url(/images/desktop/image-deep-earth.jpg);
+		background-image: url(../images/desktop/image-deep-earth.jpg);
 	}
 	.sec3 .holder .images .two {
-		background-image: url(/images/desktop/image-night-arcade.jpg);
+		background-image: url(../images/desktop/image-night-arcade.jpg);
 	}
 	.sec3 .holder .images .three {
-		background-image: url(/images/desktop/image-soccer-team.jpg);
+		background-image: url(../images/desktop/image-soccer-team.jpg);
 	}
 	.sec3 .holder .images .four {
-		background-image: url(/images/desktop/image-grid.jpg);
+		background-image: url(../images/desktop/image-grid.jpg);
 	}
 	.sec3 .holder .images .five {
-		background-image: url(/images/desktop/image-from-above.jpg);
+		background-image: url(../images/desktop/image-from-above.jpg);
 	}
 	.sec3 .holder .images .six {
-		background-image: url(/images/desktop/image-pocket-borealis.jpg);
+		background-image: url(../images/desktop/image-pocket-borealis.jpg);
 	}
 	.sec3 .holder .images .seven {
-		background-image: url(/images/desktop/image-curiosity.jpg);
+		background-image: url(../images/desktop/image-curiosity.jpg);
 	}
 	.sec3 .holder .images .eight {
-		background-image: url(/images/desktop/image-fisheye.jpg);
+		background-image: url(../images/desktop/image-fisheye.jpg);
 	}
 	footer {
 		flex-direction: row;
